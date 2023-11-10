@@ -22,11 +22,11 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: rgba(187, 187, 187, .5);
+  padding: 10px;
 }
 
 .sitename{
-  size: 10px;
-  
+  font-size: 20px;
 
 
 
