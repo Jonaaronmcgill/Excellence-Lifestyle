@@ -24,7 +24,7 @@ body{
 }
 
 .sitename{
-  font-size: 13px;
+  font-size: 15px;
   font-weight:900;
 
 
@@ -33,13 +33,13 @@ body{
 }
 
 .menubutton{
-  width: 21px;
+  width: 25px;
 }
 
 .timeline{
   display: flex;
   justify-content: center;
-  margin-top: 90%;
+  margin-top: 130%;
 
 
   
