@@ -14,13 +14,26 @@ body{
 
 header{
 
+  
 }
 
-header h1{
-  text-align: center;
+.mainheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(187, 187, 187, .5);
-  padding: 5px 0 5px 0;
+}
+
+.sitename{
+  size: 10px;
+  
+
+
 
   
+}
+
+.menubutton{
+  width: 20px;
 }
 
