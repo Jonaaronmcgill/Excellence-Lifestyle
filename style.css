@@ -1,6 +1,12 @@
 *{
   margin: 0;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+  scroll-snap-type: mandatory;
+  scroll-snap-point-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 
@@ -10,52 +16,153 @@ body{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  scroll-snap-align: center;
+  
+
+}
+
+.site{
+}
+
+#section{
+  height: 100vh;
+  scroll-snap-align: center;
 }
 
 
-
-.mainheader{
+/* Header */
+.site-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(187, 187, 187, .2);
-  padding: 15px;
+  background-color: rgb(162, 189, 179, 0.3);
+  height: 7vh;
+  box-shadow: 0 0 5px 0;
   
 }
 
-.sitename{
+.site-logo{
   font-size: 15px;
   font-weight:900;
+  padding: 0 15px;
 
-
-
+}
+.site-name{
+  text-decoration: none;
+  color:black;
   
 }
 
-.menubutton{
-  width: 25px;
+.menu-button{
+  width: 28px;
+  padding: 0 15px;
+ 
 }
 
+.menu-dropdown{
+  
+
+}
+
+
+
+/* Time-Line */
 .timeline{
-  display: flex;
+  
+  margin: 30px;
+
+}
+
+
+
+.contact{
   justify-content: center;
-  margin-top: 130%;
-
-
+  background-color: rgb(192, 156, 156, .5);
+  display: grid;
+  
+}
+.contact-button-container{
+  background-color: rgb(158, 85, 85);
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+  
+}
+.contact button{
+  background-color: #5d64dd;
+  
   
 }
 
-.timeline button{
-  font-size: large;
-  background-color: rgb(3, 96, 154);
-  color: white;
-  width: 300px;
-  height: 50px;
-  border-style: none;
-  border-width: 3px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 
+
+.about{
+  font-size: large;
+  background-color: rgb(156, 137, 137);
+  
+}
+
+.our-mission{
+  background-color: #a41e1e;
+  height: 100vh;
+}
+
+
+
+.services{
+  background-color: aqua;
+  height: 100vh;
+}
+
+
+
+
+
+
+/* Basic styling for navbar */
+
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+}
+
+.nav-item {
+  position: relative; /* For dropdown positioning */
+  
+}
+
+.nav-link {
+  display: block;
+  color: rgb(50, 26, 185);
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* Dropdown Menu - hidden by default */
+.dropdown {
+  display: flex;
+  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(175, 40, 40, 0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown a:hover {
+  background-color: #a41e1e;
 }
